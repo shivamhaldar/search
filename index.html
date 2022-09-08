@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="image/search.png" type="image">
+    <title>Search Engine </title>
+
+    <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body>
+        <header class="header">
+            <h1>Anonymous Search Engine :</h1>
+
+        </header>
+
+        <div class="middle">
+            <input type="text" class="query" value="">
+            <button class="search">Search</button>
+        </div>
+
+        <div class="bottom">
+            <h1>Made with ❤️ by Shivam Haldar </h1>
+        </div>
+
+</body>
+
+    <script>
+        let query = document.querySelector('.query');
+        let search = document.querySelector('.search');
+
+        search.onclick = function(){
+            let url = 'https://searx.be/search?q='+query.value;
+            window.open(url);
+        }
+
+            $(".query").keypress(function(event) {
+                if (event.keyCode === 13) {
+                    let url = 'https://searx.be/search?q='+query.value;
+                    window.open(url);   
+                }
+            });
+    
+    </script>
+
+</html>

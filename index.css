@@ -1,0 +1,68 @@
+
+
+body{
+    width: 100%;
+}
+
+.header{
+    justify-content: center;
+    display: flex;
+}
+
+.middle{
+    margin: 10%;
+    justify-content: center;
+    display: flex;
+}
+
+.middle input{
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.middle button{
+    margin-left: 2%;
+    width: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.bottom{
+    justify-content: center;
+    display: flex;
+}
+
+
+@media screen and (max-width: 402px) {
+    body {
+      background-color: beige;
+    }
+
+    .header{
+        font-size: 10px;
+    }
+
+    .middle{
+        margin-top: 30%;
+        margin-bottom: 80%;
+    }
+
+    .middle input{
+        height: 30px;
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    .middle button{
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        width: 30%;
+    }
+
+    .bottom{
+        font-size: 10px;
+    }
+}
