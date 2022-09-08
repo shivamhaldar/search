@@ -35,7 +35,7 @@ body{
 }
 
 
-@media screen and (max-width: 402px) {
+@media screen and (max-width: 500px) {
     body {
       background-color: beige;
     }
